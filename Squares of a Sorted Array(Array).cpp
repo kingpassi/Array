@@ -1,10 +1,8 @@
 /******************************************************************************
 Squares of a Sorted Array
 
-Given an integer array nums sorted in non-decreasing order, 
-return an array of the squares of each number sorted in non-decreasing order.
-
- 
+Given an integer array nums sorted in non-decreasing order, return an array 
+of the squares of each number sorted in non-decreasing order.
 
 Example 1:
 
@@ -20,12 +18,10 @@ Output: [4,9,9,49,121]
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {
-        vector<int>ans;
         for(int i=0;i<nums.size();i++){
-           nums[i]=nums[i]*nums[i];
+            nums[i]=nums[i]*nums[i];
         }
-        
-       sort(nums.begin(),nums.end());
+        sort(nums.begin(),nums.end());
         return nums;
     }
 };
